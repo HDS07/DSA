@@ -100,8 +100,22 @@ void pattern5(int n){
         cout<<endl;
     }
 }
+void pattern6(int n){
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=(n-i);j++){
+                cout<<" ";
+            }
+            for(int k=1;k<=(2*i-1);k++){
+                cout<<"*";
+            }
+            for(int j=1;j<=(n-i);j++){
+                cout<<" ";
+            }
+            cout<<endl;
+        }
+}
 int main(){
     int n;
     cin >> n;
-    pattern5(n);
+    pattern6(n);
 }
