@@ -21,5 +21,24 @@ int main(){
     for(auto n=v.begin();n!=v.end();n++){
         cout<<*n<<" ";
     }
+    cout<<endl;
 
+    for(auto n: v){
+        cout<<n<<" ";
+    }
+    cout<<endl;
+
+
+    v.erase(v.begin()+2);
+    for(auto n: v){
+        cout<<n<<" ";
+    }
+    cout<<endl; 
+
+    //inserting function
+    v.insert(v.begin()+2,20);
+    for(auto n: v){
+        cout<<n<<" ";
+    }
+    cout<<endl; 
 }
