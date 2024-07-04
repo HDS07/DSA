@@ -1,8 +1,11 @@
+/*Given a number n. Count the number of digits in n which evenly divide n. Return an integer, total number of digits of n which divides n evenly.
+Note :- Evenly divides means whether n is divisible by a digit i.e. leaves a remainder 0 when divided.*/
+/*Author:Harshdeep
+code:01*/
+
 #include<bits/stdc++.h> 
 using namespace std;
-class Solution{
-public:
-    int evenlyDivides(int N){
+int evenlyDivides(int N){
         int ori= N;
         int count=0;  
         while(N>0){
@@ -15,15 +18,8 @@ public:
         return count;
     }
 int main(){ 
-    int t;
-    cin>>t;
-    while(t--)
-    {
-        int N;
-        cin>>N;
-        Solution ob;
-        cout << ob.evenlyDivides(N) << endl;
-    }
-    return 0; 
+    int N;
+    cin>>N;
+    cout<<"The output is: "<<evenlyDivides(N);
+    return 0;
 }
-};
