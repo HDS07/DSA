@@ -1,3 +1,5 @@
+/*Author:Harshdeep
+code:02*/
 #include<bits/stdc++.h>
 using namespace std;
 bool isPalindrome(int x) {
