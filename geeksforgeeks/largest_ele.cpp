@@ -4,7 +4,9 @@
 // Input: arr= [1, 8, 7, 56, 90]
 // Output: 90
 // Explanation: The largest element of given array is 90.
-
+// Constraints:
+// 1 <= arr.size()<= 105
+// 0 <= arri <= 105
 #include<bits/stdc++.h>
 using namespace std;
  int largest(int arr[],int n){

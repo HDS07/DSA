@@ -5,6 +5,9 @@
 // Input: arr = [12, 35, 1, 10, 34, 1]
 // Output: 34
 // Explanation: The largest element of the array is 35 and the second largest element is 34.
+// Constraints:
+// 2 ≤ arr.size() ≤ 105
+// 1 ≤ arri ≤ 105
 
 #include<bits/stdc++.h>
 using namespace std;
