@@ -29,6 +29,12 @@ void insertionAtEnd(node* &tail,int data){
 
 void insertionAtPosition(int pos,node* &head,int data){
     node* position=head;
+    if(pos==1){
+        node* temp=new node(data);
+        temp->next=head;
+        head=temp;
+        return;
+    }
     node*temp=new node(data);
     for(int i=1;i<pos-1;i++){
         position=position->next;
@@ -50,6 +56,11 @@ int main(){
     cout<< endl; 
     insertionAtPosition(pos,head,3);
     PrintLinkedList(head);
-    
+
+    pos=1;
+    cout<<"Node added to the position : "<<pos;
+    cout<< endl;
+    insertionAtPosition(pos,head,0);
+    PrintLinkedList(head);
 
 }
