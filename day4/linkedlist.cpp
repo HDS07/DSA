@@ -34,8 +34,6 @@ int main(){
 
     printf(head);
     cout<<endl;
-    insertnode(head,30);
-
     printf(head);
 
 }
